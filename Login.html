@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Info Boxes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        align-items: center;
+        height: 100vh;
+		padding:20px;
+      }
+	  
+	   header {
+	   position:fixed;
+        margin-bottom: 20px;
+		top:0;
+		width:100%;
+		background: white;
+		padding:15px 0;
+		text-align:center;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+		z-index:1000;
+      }
+	  
+	  h1 {
+        font-size: 28px;
+        color: #333;
+		margin:0;
+      }
+
+      h2 {
+        font-size: 22px;
+        color: #555;
+        margin: 5px 0 15px;
+      }
+
+      .btn {
+        background: #ff7f50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #ff4500;
+      }
+	  
+      .container { 
+	    margin-top:120px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+      }
+
+      .info-box {
+        background: #fff;
+        width: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: grid;
+        grid-template-columns: 80px auto;
+        gap: 15px;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .info-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      .info-box img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+      }
+
+      .info-content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .info-content h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .info-content p {
+        margin: 5px 0 10px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .info-content a {
+        text-decoration: none;
+        background: #ff7f50;
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        text-align: center;
+        width: 100px;
+        font-size: 14px;
+        transition: background 0.3s ease;
+      }
+
+      .info-content a:hover {
+        background: #ff4500;
+		}
+		
+		      .Home-btn {
+        display: block;
+        background-color: #1877f2;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .Home-btn:hover {
+        background-color: #145db2;
+      }
+
+		
+      
+    </style>
+	<script>
+	
+		function ApplyPage(){
+			window.location.replace("Apply.html");
+		}
+		
+		function HomePage(){
+			window.location.replace("XIDONKANA.html");
+		}
+		
+		
+	</script>
+  </head>
+  <body>
+    <header>
+		<h1>Welcome to XIDONKANA CATERING SERVICE</h1>
+		<h2>BORN TO WORK</h2>
+		<button onclick=" ApplyPage()" class="btn">APPLY NOW</button>
+	</header>
+    <div class="container">
+      <div class="info-box"><img src="baking.jpeg" alt="Baking"><div class="info-content"><h3>BAKING CHEF</h3><p>Learn the secrets of professional baking Chef.</p><a href="BakingChef.html">Explore</a></div></div>
+      <div class="info-box"><img src="Seafood-Platter_Sony-5.jpg" alt="SEAFOOD"><div class="info-content"><h3>SEAFOOD CHEF</h3><p>Learn the secrets of professional seafood.</p><a href="Seafood.html">Explore</a></div></div>
+      <div class="info-box"><img src="Vegetarian-Burrito-Bowl-TIMG.jpg" alt="VEGETARIAN"><div class="info-content"><h3>VEGETARIAN CHEF</h3><p>Learn the secrets of professional vegetarian Chef.</p><a href="Vegetarian.html">Explore</a></div></div>
+      <div class="info-box"><img src="the-original-burger-dWxlvBq8vvsrN0zr.jpg" alt="CHEF DE CUISINE"><div class="info-content"><h3>CHEF DE CUISINE</h3><p>Learn the secrets of professional Chef de cuisine.</p><a href="DeCuisine.html">Explore</a></div></div>
+      <div class="info-box"><img src="CHEF-DE-PARTIE.jpg" alt="CHEF DE PARTIE"><div class="info-content"><h3>CHEF DE PARTIE</h3><p>Learn the secrets of professional Chef de partie.</p><a href="DePartie.html">Explore</a></div></div>
+      <div class="info-box"><img src="CHEF-PASTRY.jpg" alt="CHEF PASTRY"><div class="info-content"><h3>CHEF PASTRY</h3><p>Learn the secrets of professional Chef Pastry.</p><a href="Pastry.html">Explore</a></div></div>
+      <div class="info-box"><img src="sous-chef-jd.jpg" alt="sous chef"><div class="info-content"><h3>SOUS CHEF</h3><p>Learn the secrets of professional Sous Chef.</p><a href="Sous.html">Explore</a></div></div>
+      <div class="info-box"><img src="FRY-CHEF.jpg" alt="FRY CHEF"><div class="info-content"><h3>FRY CHEF</h3><p>Learn the secrets of professional Fry Chef.</p><a href="Fry.html">Explore</a></div></div>
+      <div class="info-box"><img src="grill-plate.jpg" alt="GRILL CHEF"><div class="info-content"><h3>GRILL CHEF</h3><p>Learn the secrets of professional Grill Chef.</p><a href="Grill.html">Explore</a></div></div>
+      <div class="info-box"><img src="SAUCE-CHEF.jpg" alt="SAUCE CHEF"><div class="info-content"><h3>SAUCE CHEF</h3><p>Learn the secrets of professional Sauce Chef.</p><a href="Sauce.html">Explore</a></div></div>
+	  
+    </div>
+	<button  onclick="HomePage()" type="button" class="Home-btn">Log Out</button>
+  </body>
+</html>

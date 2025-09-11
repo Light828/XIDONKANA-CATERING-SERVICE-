@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now</title>
+
+  </head>
+  <script>
+	let images=["Pic.PNG","Pic1.PNG","Pic2.PNG","Pic3.PNG","Pic4.PNG","Pic5.PNG","Pic6.PNG"];
+	let index=0;
+	
+	function changeImage(){
+			index=(index + 1)% images.length;
+			document.getElementById("changing-image").src=images[index];
+			
+	}
+	
+	setInterval(changeImage, 3000);
+	
+	    
+      function HomePage(){
+        window.location.replace("Login.html");
+      }
+    
+  </script>
+  
+  <style>
+  
+	body{
+		font-family:Arial, sans-serif;
+		margin:0;
+		padding:0;
+		background-color:#f4f4f4;
+	}
+	header{
+		text-align:center;
+		padding:20px;
+		background-color:#333;
+		color:blue;
+	}
+	
+	h1,h2,h3,h4,{
+		margin:10px 0;
+	}
+	
+	.bodyy{
+		max-width:800px;
+		margin:20px auto;
+		padding:20px;
+		background-color:white;
+		box-shadow:0px 0px 10px rgba(0, 0, 0, 0.1);
+		border-radius:8px;
+	}
+	
+	p{
+		font-size:16px;
+		line-height:1.6;}
+	
+	img{
+		display:block;
+		max-width:100%;
+		height:auto;
+		margin:20px auto;
+		border-radius:8px;
+		box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);
+		
+	}
+	
+	footer{
+		text-align:center;
+		padding:15px;
+		background-color:#333;
+		color:blue;
+		margin-top:20px;
+	}
+	
+	      .Home-btn {
+        display: block;
+        background-color: #1877f2;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .Home-btn:hover {
+        background-color: #145db2;
+      }
+	
+  </style>
+  <body>
+	<header>
+		<h1>XIDONKANA CETERING & TRAINING SCHOOL</h1>
+		<h2>XIDONKANA CETERING SCHOOL</h2>
+		<h3>Venue:UTAH</h3>
+		<h4>Registration number: 2016/336174/07.<br> Tracking Number: 958232864.<br> Customer Code: SUNN 15.</h4>
+	</header>
+	<div class="bodyy">
+		<p>Four months of practical & theory classes and addition of Two months working industry practical.The course is for Total of six months.
+		   R1200 Registration & R800 per month for five months.That makes the Total of R5200 course that cover shcool fees, chef Jacket ,Hat graduation, 
+		   Basic Cumputer skill, Battler service skills And Certificate upon Completion of the course. There also an introduction to the agency to help with job hunting</p>
+		   
+		   <img id="changing-image" src="Pic.PNG" alt="not found">
+		   <button onclick="HomePage()" type="button" class="Home-btn">Login Page</button>
+	</div>
+	
+	<footer>
+		<p> Contact us at <strong>Email:</strong> XIDONKANA@gmail.com | <strong>Phone:</strong> +27782992853</p>
+		<p>&copy; Good will never be enough if Best/Excellent is possible.</p>
+	</footer>
+  </body>
+</html>

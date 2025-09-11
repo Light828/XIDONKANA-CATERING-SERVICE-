@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+	<style>
+			body {
+            font-family: Arial, sans-serif;
+			background-color: #f0f5f7;
+        }
+		
+		.container {
+            width: 300px;
+            margin: auto;
+			
+			}
+		label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+        }
+		.hposition{
+			position:relative;
+			left:50px;
+			color:#1877f2;
+		}
+		
+		      .Home-btn {
+        display: block;
+        background-color: #1877f2;
+        color: white;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .Home-btn:hover {
+        background-color: #145db2;
+      }
+	</style>
+
+</head>
+<body>
+<h1 class="hposition"> STAY UPDATED AND CONNECTED IN THE WORLD OF CHEFS</h1>
+    <div class="container">
+		
+        <h2>Create XIDONKANA Account</h2>
+        <form id="accountForm">
+            <label>First Name: <input type="text" id="firstName" required></label>
+            <label>Last Name: <input type="text" id="lastName" required></label>
+            <label>Email Address: <input type="email" id="email" required></label>
+            <label>Password: <input type="password" id="password" required></label>
+            <label>Confirm Password: <input type="password" id="confirmPassword" required></label>
+            
+            <label>Chef Speciality:
+                <select id="speciality" name="speciality" multiple>
+                    <option value="Baking">Baking</option>
+                    <option value="Seafood">Seafood</option>
+                    <option value="Vegetarian">Vegetarian</option>
+					<option value="de cuisine">Chef de cuisine</option>
+					<option value="de partie">Chef de partie</option>
+					<option value="pastry">Chef Pastry</option>
+					<option value="sous">Sous Chef</option>
+					<option value="Fry">Fry Chef</option>
+					<option value="Grill">Grill Chef</option>
+					<option value="Sauce">Sauce Chef</option>
+                </select>
+            </label>
+            
+            <label>Location: <input type="text" id="location"></label>
+            
+            <label>Experience:
+                <select id="experience">
+                    <option value="Home Cook">Home Cook</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Professional">Professional</option>
+                </select>
+            </label>
+
+            <label><input type="checkbox" id="terms"> I agree to the Terms of Service</label>
+            <label><input type="checkbox" id="privacy"> I agree to the Privacy Policy</label>
+            <label><input type="checkbox" id="updates"> Receive Optional Email Updates</label>
+
+            <button type="button" onclick="validateForm()">Submit Account Creation</button>
+			<button onclick="HomePage()" type="button" class="Home-btn">Home Page</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            const termsChecked = document.getElementById("terms").checked;
+            const privacyChecked = document.getElementById("privacy").checked;
+
+            if (!termsChecked || !privacyChecked) {
+                alert("You must agree to the Terms of Service and Privacy Policy.");
+                return;
+            }
+
+            alert("Account created successfully!");
+        }
+		
+		      function HomePage(){
+        window.location.replace("XIDONKANA.html");
+      }
+    </script>
+</body>
+</html>
